@@ -8,7 +8,7 @@ const cakeReducer = (state=initialstate, action) => {
     case BUY_CAKE: 
       return {
         ...state,
-        num_of_cakes: state.num_of_cakes - 1,
+        num_of_cakes: state.num_of_cakes - action.payload,
       };
     default:return state
   }
